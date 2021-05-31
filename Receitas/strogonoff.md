@@ -15,7 +15,7 @@
 
 ### Modo de preparo
 
-1. Do it
-2. Do it
-3. Do it too
-4. Do it
+1. Do not it
+2. Do not it
+3. Do not it too
+4. Do not it
