@@ -6,13 +6,20 @@ fun main() {
     val maria = Funcionario(nome = "Maria Madalena", salario = 2800.0, tipoContratacao = "CLT")
 
     val repositorio = Repositorio<Funcionario>()
-    repositorio.create(joao.nome, joao)
-    repositorio.create(pedro.nome, pedro)
-    repositorio.create(maria.nome, maria)
+    repositorio.create(joao.nome, joao) //add joao no repositorio
+    repositorio.create(pedro.nome, pedro) //add pedro no repositorio
+    repositorio.create(maria.nome, maria) //add maria no repositorio
 
-    println(repositorio.findById(joao.nome))
+    println(repositorio.findById(joao.nome)) //imprime o joao atraves do id
     println("")
 
-    repositorio.getAll()
+    repositorio.getAll()    //lista tudo o que tem no repositorio
         .forEach{println(it)}
+    println("")
+
+    repositorio.remove(maria.nome) //remove maria do repositorio
+    repositorio.getAll()    //lista tudo o que tem no repositorio
+        .forEach{println(it)}
+    println("")
+
 }
